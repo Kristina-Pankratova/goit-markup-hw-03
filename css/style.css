@@ -12,11 +12,13 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   font-style: normal;
   font-family: 'Roboto', sans-serif;
-  margin: 0px;
-  padding: 0px;
 }
 h1,
 h2,
@@ -180,7 +182,7 @@ a {
 .experience-item:not(:last-child) {
   margin-right: 30px;
 }
-.second-site-title {
+.section-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -273,6 +275,7 @@ a {
 }
 .social-content {
   display: flex;
+  align-items: baseline;
 }
 .site-address {
   margin-top: 8px;
@@ -281,6 +284,7 @@ a {
 .address-content {
   width: 231px;
   padding-top: 45px;
+  padding-bottom: 28px;
   margin-right: 69px;
 }
 .address {
@@ -303,6 +307,7 @@ a {
 .join-content {
   width: 206px;
   padding-top: 57px;
+  padding-bottom: 56px;
 }
 .join-list {
   display: flex;
@@ -320,6 +325,7 @@ a {
   color: var(--white-title-color);
 }
 .site-development {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 18px;
   padding-bottom: 24px;
 }
