@@ -4,15 +4,9 @@
   --white-title-color: #ffffff;
   --link-focus-color: #2196f3;
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
@@ -48,6 +42,8 @@ h3 {
 }
 .header-content {
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo-web {
   color: #2196f3;
@@ -140,17 +136,23 @@ a {
 .main-button-link:focus {
   background-color: var(--link-focus-color);
 }
-.first-section {
+.second-section {
   padding-top: 94px;
 }
 .second-section {
   display: flex;
 }
 .second-section-item {
-  width: 270px;
+  width: calc((100% - 30px * 3) / 4);
 }
 .second-section-item:not(:last-child) {
   margin-right: 30px;
+}
+.second-section-pic {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  padding: 25px 100px;
 }
 .description-title {
   font-weight: bold;
@@ -177,7 +179,7 @@ a {
   display: flex;
 }
 .experience-item {
-  width: 370px;
+  width: calc((100% - 30px * 2) / 3);
 }
 .experience-item:not(:last-child) {
   margin-right: 30px;
@@ -211,7 +213,7 @@ a {
   display: flex;
 }
 .team-card {
-  width: 270px;
+  width: calc((100% - 30px * 3) / 4);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -220,12 +222,15 @@ a {
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
+.team-card-description {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
 .worker {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  margin-top: 30px;
   color: var(--main-text-color);
 }
 .post {
@@ -241,7 +246,6 @@ a {
   margin-top: 16px;
   padding: 0;
   justify-content: center;
-  margin-bottom: 24px;
   display: flex;
 }
 
@@ -256,7 +260,7 @@ a {
   display: flex;
 }
 .client-item {
-  width: 170px;
+  width: calc((100% - 30px * 5) / 6);
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
@@ -373,7 +377,7 @@ a {
 }
 
 .portfolio-menu-item {
-  width: 370px;
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
